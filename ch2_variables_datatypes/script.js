@@ -1,18 +1,16 @@
-var firstName = "Abdalla";
-var lastName = "Moalim";
-var age = 25;
-var isStudent = true;
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(isStudent);
+// // var firstName = "Abdalla"; //string
+// // var lastName = "Moalim"; //string
+// // var age = 25; //number
+// // var isStudent = true; //boolean
+// // console.log(firstName);
+// // console.log(lastName);
+// // console.log(age * age);
+// // console.log(isStudent);
 
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(isStudent);
+// var CapitalCity = null;
+// // city = "London";
+// // city = "Manchester";
+// console.log(capitalCity);
 
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(isStudent);
+var place = "Acton";
+console.log(typeof place);
