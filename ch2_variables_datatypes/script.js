@@ -12,5 +12,5 @@
 // // city = "Manchester";
 // console.log(capitalCity);
 
-var place = "Acton";
+var place = "Victoria";
 console.log(typeof place);
