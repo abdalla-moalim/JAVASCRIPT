@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ES6 Example</title>
+</head>
+<body>
+  <h1>Open the Console (F12) to see ES6 Examples</h1>
+  <script>
+    // 1. let, const, and block scope
+    const TAX_RATE = 0.15;
+    let price = 100;
+
+    // 2. Template literals
+    console.log(`Price before tax: $${price}`);
+
+    // 3. Arrow functions
+    const calculateTotal = (amount, tax) => amount + amount * tax;
+    let total = calculateTotal(price, TAX_RATE);
+    console.log(`Total after tax: $${total}`);
+
+    // 4. Default parameters
+    function greet(name = "Guest") {
+      console.log(`Hello, ${name}!`);
+    }
+    greet(); // Hello, Guest
+    greet("Abdalla"); // Hello, Abdalla
+
+    // 5. Destructuring
+    const user = { username: "abdalla", age: 25, country: "UK" };
+    const { username, age } = user;
+    console.log(`User: ${username}, Age: ${age}`);
+
+    // 6. Spread and Rest
+    const numbers = [1, 2, 3];
+    const moreNumbers = [...numbers, 4, 5];
+    console.log(moreNumbers); // [1,2,3,4,5]
+
+    function sum(...nums) {
+      return nums.reduce((a, b) => a + b, 0);
+    }
+    console.log(sum(1, 2, 3, 4)); // 10
+
+    // 7. Classes
+    class Product {
+      constructor(name, price) {
+        this.name = name;
+        this.price = price;
+      }
+      display() {
+        console.log(`${this.name} costs $${this.price}`);
+      }
+    }
+    const item = new Product("Laptop", 1200);
+    item.display();
+
+    // 8. Promises and async/await
+    function fetchData() {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve("Data loaded"), 1000);
+      });
+    }
+
+    async function loadData() {
+      const result = await fetchData();
+      console.log(result);
+    }
+    loadData();
+  </script>
+</body>
+</html>
